@@ -1,13 +1,12 @@
 $(document).ready(function () {
-  
-    //Variable to store current hour from Moment
-  
+  //Variable to load/store current hour from Moment
+
   var currentHour = moment().hours();
-  
+
   //Set current day at top from Moment API
-  
-  $("#currentDay").text(moment().format("MMMM Do YYYY"));
-  
+
+  $("#currentDay").text("Today is " + moment().format("MMMM Do YYYY"));
+
   //color code each block to indicate whether in past, present, future (use classes in CSS)
 
   function colorChange() {
@@ -22,8 +21,8 @@ $(document).ready(function () {
         $(this).addClass("future");
       }
       console.log(rowNumber);
-      console.log(rowHour)
-      console.log(currentHour)
+      console.log(rowHour);
+      console.log(currentHour);
     });
   }
 
@@ -36,8 +35,6 @@ $(document).ready(function () {
 
     localStorage.setItem(textBox, timeOfDay);
   });
-  
-  //when page is refreshed, saved text is reloaded to block hours from local storage
 
-  
+  //when page is refreshed, saved text is reloaded to block hours from local storage
 });
