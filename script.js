@@ -13,6 +13,7 @@ $(document).ready(function () {
     $(".time-block").each(function () {
       var rowHour = $(this).attr("id");
       var rowNumber = parseInt(rowHour);
+      
       if (rowNumber === currentHour) {
         $(this).addClass("present");
       } else if (rowNumber < currentHour) {
@@ -30,11 +31,12 @@ $(document).ready(function () {
   //when text entered into time block, save button saves in local storage
 
   $(".saveBtn").on("click", function () {
-    var textBox = $(this).siblings(".description").val();
-    var timeOfDay = $(this).parent().attr("id");
+    var timeOfDay = $(this).siblings(".description").val();
+    var textBox = $(this).parent().attr("id");
 
     localStorage.setItem(textBox, timeOfDay);
   });
 
   //when page is refreshed, saved text is reloaded to block hours from local storage
+  
 });
