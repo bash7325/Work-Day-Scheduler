@@ -22,14 +22,13 @@ $(document).ready(function () {
       } else {
         $(this).addClass("future");
       }
-      console.log(rowNumber);
-      console.log(rowHour);
-      console.log(currentHour);
     });
   }
 
   colorChange();
+
   //When text entered into time block, save button saves in local storage
+
   saveBtn.on("click", function () {
     var timeOfDay = $(this).siblings(".hour").text();
     var task = $(this).siblings(".description").val();
@@ -38,6 +37,7 @@ $(document).ready(function () {
   });
 
   //When page is refreshed check to see if local storage has anything in it, if it does text is reloaded from local storage
+  
   function saveTask() {
     $(".hour").each(function () {
       var currHour = $(this).text();
