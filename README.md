@@ -18,6 +18,14 @@ Created a work day scheduler to help organize your day. This project allowed me 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [W3 HTML validator](https://validator.w3.org/nu/)
 
+# Technologies used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Server Side API's (Open Weather, Moment)
+
 # Deployed project
 
 - [Work Day Scheduler](https://bash7325.github.io/Work-Day-Scheduler/)
